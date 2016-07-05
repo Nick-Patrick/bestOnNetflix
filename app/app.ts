@@ -15,8 +15,7 @@ export class MyApp {
   constructor(private platform:Platform) {
     this.rootPage = TabsPage;
     this.admobid = {
-      banner: 'ca-app-pub-3981028455625793/9868380111',
-      interstitial: 'ca-app-pub-3981028455625793/9728779310'
+      banner: 'ca-app-pub-3981028455625793/9894615711'
     };
 
     this.initFirebase();
