@@ -1,0 +1,9 @@
+<ion-navbar dark *navbar text-center>
+  <ion-title>Best On Netflix</ion-title>
+</ion-navbar>
+
+<ion-content>
+  <ion-list *ngFor="let popularTitle of popularTitles">
+    <TitleItem [title]="popularTitle"></TitleItem>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,29 @@
+.ratingArea {
+  margin-top: 0px;
+}
+
+img.thumbnail-no-padding {
+  top: 0;
+  left: 0;
+  max-height: 100%;
+  max-width: 80px;
+}
+
+h2.title {
+  font-size: 1.1em;
+}
+
+.votes {
+  bottom: 10px;
+  position: absolute;
+  right: 0;
+  padding: 16px 14px;
+  font-size: 0.7em;
+}
+
+p.category {
+  max-width: 75%;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #D32F2F;
+}

@@ -1,0 +1,47 @@
+<ion-navbar dark *navbar>
+  <ion-title>{{title.title}}</ion-title>
+</ion-navbar>
+
+<ion-content>
+  <ion-card>
+    <img src="{{title.image_backdrop_large || title.image_backdrop_small || title.image_tile}}"/>
+    <button *ngIf="title.videos" (click)="playTrailer(title)" class="playButton" favorite fab fab-right fab-top>
+      <ion-icon name="play"></ion-icon>
+    </button>
+
+    <ion-card-content>
+      <ion-card-title>
+        {{title.title}} ({{title.start_year}})
+      </ion-card-title>
+      <p>{{title.description}}</p>
+      <p dark>{{title.category}}</p>
+
+      <ion-item *ngIf="title.imdb_rating">
+        <ion-icon favorite name="star" item-left large ></ion-icon>
+        <h2>{{title.imdb_rating | number:'1.1'}} / 10</h2>
+        <p>IMDB Rating</p>
+      </ion-item>
+      <ion-item *ngIf="title.vote_average">
+        <ion-icon danger name="checkmark" item-left large ></ion-icon>
+        <h2>{{title.vote_average | number:'1.1'}} / 10</h2>
+        <p>Audience Rating (Votes: {{title.vote_count}})</p>
+      </ion-item>
+      <ion-item *ngIf="title.netflix_rating">
+        <ion-icon primary name="heart" item-left large ></ion-icon>
+        <h2>{{title.netflix_rating | number:'1.1'}} / 5</h2>
+        <p>Netflix Rating</p>
+      </ion-item>
+
+      <ion-item *ngIf="flags">
+        <ul class="flags" *ngFor="let flag of flags">
+          <li><span class="flag-icon flag-icon-{{flag}}"></span></li>
+        </ul>
+      </ion-item>
+
+      <a href="https://www.netflix.com/title/{{title.netflix_id}}" class="button button-large button-full linkButton">
+        Watch on Netflix
+      </a>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "291068482266",
+    "firebase_url": "https://bestratednetflix.firebaseio.com",
+    "project_id": "bestratednetflix",
+    "storage_bucket": "bestratednetflix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291068482266:android:2fbfef7e952345d0",
+        "android_client_info": {
+          "package_name": "com.streamsidekick.bestonnetflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291068482266-ve0j59op4cb4g6gj1059d0gln9gmlluc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnZIm3lLGQE5ZedXjjw1RtfVZySS4mDfY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

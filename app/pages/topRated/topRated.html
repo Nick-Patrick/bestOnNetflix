@@ -1,0 +1,9 @@
+<ion-navbar dark *navbar text-center>
+  <ion-title>Best On Netflix</ion-title>
+</ion-navbar>
+
+<ion-content>
+  <ion-list *ngFor="let topRatedTitle of topRated">
+    <TopRatedTitleItem [title]="topRatedTitle"></TopRatedTitleItem>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,15 @@
+<ion-item (click)="selectTitle(title)">
+  <ion-thumbnail item-left>
+    <img class="thumbnail-no-padding" [src]="title.image_poster_small || title.image_poster_large">
+  </ion-thumbnail>
+
+  <h2 class="title">{{title.title}}</h2>
+  <p>{{title.start_year}}</p>
+  <p primary class="category">{{title.category}}</p>
+  <div class="ratingArea" item-right>
+    <h2>{{title.imdb_rating | number:'1.1'}}</h2>
+    <p>/ 10 </p>
+  </div>
+  <p class="votes" item-right>IMDB</p>
+
+</ion-item>
