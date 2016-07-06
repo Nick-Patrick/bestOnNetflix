@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.streamsidekick.bestonnetflix" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.streamsidekick.bestonnetflix" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Netflix Best Picks</name>
   <description>Finding you the best on Netflix. Only the highest rated and most popular TV and movies on Netflix right now. Forget Netflix's recommendations, we'll show you the top shows to watch on Netflix instantly.</description>
   <author email="admin@streamsidekick.com" href="http://streamsidekick.com/">
