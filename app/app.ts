@@ -32,12 +32,7 @@ export class MyApp {
   }
 
   initFirebase() {
-    const fbConf = {
-      apiKey: 'AIzaSyDC5a-FHZwr-RJR2Ig3w5tnLD83JYvkJoA',
-      authDomain: 'bestRatedNetflix.firebaseapp.com',
-      databaseURL: 'https://bestRatedNetflix.firebaseio.com',
-      storageBucket: 'bestratednetflix.appspot.com'
-    };
+   
 
     firebase.initializeApp(fbConf);
   }
